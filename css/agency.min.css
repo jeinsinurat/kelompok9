@@ -153,7 +153,7 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #212529;
+        background-color: #212529
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -165,7 +165,7 @@ img::-moz-selection {
 header.masthead {
     text-align: center;
     color: #fff;
-    background-image: url("../img/bg-masthead.jpg");
+    background-image: url(../img/bg-masthead.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -690,4 +690,3 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover {
     background-color: #fed136
 }
-b
