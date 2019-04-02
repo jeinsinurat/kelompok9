@@ -396,6 +396,23 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Window Forensics</h2>
           <br>
+          <h3>Thumbs.db / thumbcache</h3>
+          <p>Most versions of Windows cache "thumbnails" of image files that are stored in users directories and opened by the user. Various tools can process these thumbnails, such as scalpel.</p>
+
+          <h3>lnk files</h3>
+          <p>LNK files are Windows shortcuts. Users might create them deliberately, but they are also created when files are opened by a user (to place in the "Recents" folder). Various tools exist to parse these files, for example, liblnk.</p>
+
+          <h3>Browser information</h3>
+          <p>Depending upon the version of Windows, the browser information (cache, users-typed URLs, etc.) lives in various places. Tools exist to parse and extract relevant information.</p>
+
+          <h3>Registry</h3>
+          <p>The Windows Registry is a binary key-value store that also supports subkeys. In other words, it is a hierarchical database that maintains configuration settings for applications, hardware, and users.
+<br>You can directly access your local registry through regedit. You can use various forensic tools to directly parse the registry. Where do the backing files live?
+<br>Along with various event logs, you can use the registry to find evidence that certain apps were opened, or settings modified, or hardware inserted/removed, etc.</p>
+
+          <h3>Partial printer files</h3>
+          <p>.SPL files are spool files, that is, the file Windows creates when preparing to send a file to a printer. Find the EMF marker, then go back 41 bytes, carve from there.
+<br>Then you have an EMF file, which is an enhanced Windows Metafile. These are most easily viewed on Windows, since they are typically parsed with Windows API functions.</p>
         </div>
       </div>
     </div>
